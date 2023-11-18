@@ -1,0 +1,14 @@
+import java.util.Scanner;
+ public class uberApp
+{
+
+public static void main(String[] args)
+{
+
+int number;
+
+Scanner input;
+input = new Scanner(System.in);
+
+if(number is int);
+System.out.print("String")
