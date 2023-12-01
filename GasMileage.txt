@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class GasMileage{
+public static void main(String[] args){
+
+	Scanner scanner = new Scanner(System.in);
+
+	System.out.print("Enter miles driven: ");
+	int miles = scanner.nextInt();
+	System.out.print("Enter the number of gallon used: ");
+	int gallon = scanner.nextInt();
+
+	int count = 1;
+	int milesDriven = 0;
+	int gallonUsed = 0;
+	int total = 0;
+	double milesPerGallon = 0;
+	while(number != -1){
+	System.out.print("Enter miles driven: ");
+	miles = scanner.nextInt();
+	System.out.print("Enter the number of gallon used: ");
+	gallon = scanner.nextInt();
+
+	if(miles > 0){
+	milesDriven++;
+	}
+	if(gallon > 0){
+	gallonUsed++;
+	}
+	count++;
+	total += milesDriven;
+	total += gallonUsed;
+	double milesPerGallon = milesDriven/gallonUsed;
+	}
+	System.out.printf("MilesPergallon is %.1f", milesPerGallon);
+	
+	
+}
+}
