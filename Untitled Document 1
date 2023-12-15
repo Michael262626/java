@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class TabularOutput{
+public static void main(String... args){
+
+Scanner scanner = new Scanner(System.in);
+int count = 0;
+int square = 0;
+int number = 0;
+int triple = 0;
+int quadriple = 0;
+System.out.print(N\tN2\tN3\t\tN4)
+while(number <=5 ){
+
+square = number * number;
+triple = number * number * number;
+quadriple = number * number * number * number;
+count++;
+}
+System.out.println("%d\t%d\t%d\t%d\t%d", square, triple, quadriple);
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}

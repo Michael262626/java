@@ -1,0 +1,179 @@
+import java.util.Scanner;
+
+public class NokiaPhone{
+public static void main(String... args){
+
+Scanner scanner = new Scanner(System.in);
+
+System.out.println("1.Phone book");
+System.out.println("2.Messages");
+System.out.println("3.Chat");
+System.out.println("4.Call Register");
+System.out.println("5.Tones");
+System.out.println("6.Settings");
+System.out.println("7.Call Divert");
+System.out.println("8.Games");
+System.out.println("9.Calculator");
+System.out.println("10.Reminders");
+System.out.println("11.Clock");
+System.out.println("12.Profiles");
+System.out.println("13.Sim services");
+
+System.out.print("Select a number 1 - 13: ");
+int number = scanner.nextInt();
+
+if(number == 1){
+System.out.println("1.Search");
+System.out.println("2.Services Nos");
+System.out.println("3.Add Name");
+System.out.println("4.Erase");
+System.out.println("5.Edit");
+System.out.println("6.Assign tone");
+System.out.println("7.Send B' Card");
+System.out.println("8.Options");
+System.out.println("9.Speed Dials");
+System.out.println("10.Voice Tags");
+
+System.out.print("Select a number 1 - 10: ");
+int number1 = scanner.nextInt();
+while("number1 < 0 || number1 > 10"){
+System.out.print("Select a number 1 - 10: ");
+int number1 = scanner.nextInt();
+
+if(number1 == 1){
+System.out.println("Search");
+}
+elif(number1 == 2){
+System.out.println("Service Nos");
+}
+elif(number1 == 3){
+System.out.println("Add Name");
+}
+elif(number1 == 4){
+System.out.println("Erase");
+}
+elif("number1 == 5"){
+System.out.println("Edit");
+}
+elif("number1 == 6"){
+System.out.println("Assign tone");
+}
+elif("number1 == 7"){
+System.out.println("Send B' Card");
+}
+elif("number1 == 8"){
+System.out.println("Options");
+System.out.println("1.Type of view");
+System.out.println("2.Memory status");
+}
+elif("number1 = 9"){
+System.out.println("Speed Dials");
+}
+elif("number1 == 10"){
+System.out.println("Voice Tags");
+}
+
+else{
+System.out.println("Invalid number");
+System.out.println("Please re-enter from 1 -10 :)");
+}
+}
+}
+
+if(number == 2){
+System.out.println("1.Write messages");
+System.out.println("2.Inbox");
+System.out.println("3.Outbox");
+System.out.println("4.Picture messages");
+System.out.println("5.Templates");
+System.out.println("6.Smileys");
+System.out.println("7.Messages settings");
+System.out.println("8.Info serivces");
+System.out.println("9.Voice mailbox number");
+System.out.println("10.Services command editor");
+
+System.out.println("Select a number form 1-7: ");
+int number1 = scanner.nextInt();
+
+if(number1 == 1){
+System.out.println("Write messages");
+}
+elif(number1 == 2){
+System.out.println("Inbox");
+}
+elif(number1 == 3){
+System.out.println("Outbox");
+}
+elif(number1 == 4){
+System.out.println("Picture messages");
+}
+elif(number1 == 5){
+System.out.println("Templates");
+}
+elif(number1 == 6){
+System.out.println("Smileys");
+}
+elif(number1 == 7){
+System.out.println("Message settings");
+System.out.print("1.Set");
+System.out.println(\t"1.Message center number");
+System.out.println(\t"2.Messages sent as");
+System.out.println(\t"3.Message validity");
+System.out.print("2.Common");
+System.out.println(\t"1.Delivery reports");
+System.out.println(\t"2.Reply via same centre");
+System.out.print(\t"3.Character support");
+}
+
+elif(number1 == 8){
+System.out.print("Info service");
+}
+elif(number1 == 9){
+System.out.print("Voice mailbox number");
+}
+elif(number1 == 10){
+System.out.print("Service command editor");
+}
+else{
+System.out.println("Invalid number");
+System.out.println("Please re-enter from 1 - 10 :)");
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+}

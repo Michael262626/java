@@ -12,7 +12,7 @@ int number = scanner.nextInt();
 
 for(int digit = 1; digit<=number; digit++){
 
-count *= digit;
+count = count * digit;
 }
 
 System.out.print("The factorial is " + count);

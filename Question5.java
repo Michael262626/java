@@ -15,7 +15,7 @@ int number2 = scanner.nextInt();
 
 for(int digit = 1; digit<=number2; digit++){
 
-count *= number1;
+count = count * number1;
 }
 System.out.println("power is " + count);
 
