@@ -13,14 +13,14 @@ public static void main(String[] args){
 	for(int i = 2; i < number; i++){
 	if(number % i == 0){
 	
-System.out.println("is not a prime number");
+System.out.printf("%d is not a prime number", number);
 return;
 	
 	}
 	}
 
 
-System.out.println("is a prime number");
+System.out.printf("%d is a prime number", number);
 
 }
 }

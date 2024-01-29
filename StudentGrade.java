@@ -2,40 +2,37 @@ import java.util.Scanner;
 public class StudentGrade{
 public static void main(String... args){
 Scanner scanner  = new Scanner(System.in);
-System.out.print("Enter student name: ");
-System.out.print("Enter student grade: ");
+int countA = 0, countB =0, countC = 0, countD = 0;
+
 for(int count = 1; count <=5; count++){
+System.out.print("Enter student name: ");
 String name = scanner.nextLine();
-int grade  = scanner.nextInt();
-if(grade > 100 || grade < 30)
-System.out.print("\nSee me\nimmediately");
-else{
+System.out.print("Enter student grade: ");
+String grade  = scanner.nextLine();
 switch(grade){
-case (1):
-if(grade >= 75){
-System.out.print("A");
-}
+case "A":
+countA++;
 break;
-case (2):
-if(grade <= 70){
-System.out.print("B");
-}
+case "B":
+countB++;
 break;
-case (3):
-if(grade <= 65){
-System.out.print("C");
-}
+case "C":
+countC++;
 break;
-if(grade <= 55){
-System.out.print("D");
-}
+case "D":
+countD++;
 break;
-}
 }
 
 }
-}
 
+System.out.println("Number of students with grade A:" +countA);
+System.out.println("Number of students with grade B:" +countB);
+System.out.println("Number of students with grade C:" +countC);
+System.out.println("Number of students with grade D:" +countD);
+
+
+}
 
 }
 
