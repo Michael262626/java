@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="CoinTossing.java">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/junit-platform-console-standalone-1.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/junit-jupiter-api-5.10.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
