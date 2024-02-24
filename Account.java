@@ -2,7 +2,12 @@ package chapterThree;
 
 public class Account {
     private int balance;
-    public int getBalance(){
+
+    public Account(int accountNumber, int amount) {
+
+    }
+
+    public int getBalance() {
         return balance;
     }
 
@@ -11,7 +16,7 @@ public class Account {
     }
 
     public void withdraw(int amount) {
-       if(amount <= balance && amount > 0) balance -= amount;
+        if (amount <= balance && amount > 0) balance -= amount;
     }
 
 

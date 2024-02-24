@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class AccountTest {
     @Test
     public void depositNegativeBalance_balanceRemainsUnchangedTest(){
-        Account michaelAccount = new Account();
+        Account michaelAccount = new Account(123456789, 0);
         assertEquals(0, michaelAccount.getBalance());
 
         michaelAccount.deposit(-50_000);
@@ -15,7 +15,7 @@ public class AccountTest {
     }
     @Test
     public void depositPositiveAmount_balanceIncreasesTest(){
-        Account michaelAccount = new Account();
+        Account michaelAccount = new Account(123456789, 0);
         assertEquals(0, michaelAccount.getBalance());
 
         michaelAccount.deposit(2_000);
@@ -23,7 +23,7 @@ public class AccountTest {
     }
     @Test
     public void depositPositiveAmountTwice_balanceIncreasesTest(){
-        Account michaelAccount = new Account();
+        Account michaelAccount = new Account(123456789, 0);
         assertEquals(0, michaelAccount.getBalance());
 
         michaelAccount.deposit(2_000);
@@ -33,7 +33,7 @@ public class AccountTest {
     }
     @Test
     public void withdrawAmountHigherThanTheBalanceTest(){
-        Account michaelAccount = new Account();
+        Account michaelAccount = new Account(123456789, 0);
         assertEquals(0, michaelAccount.getBalance());
 
         michaelAccount.withdraw(20_000);
@@ -43,7 +43,7 @@ public class AccountTest {
 
     @Test
     public void withdrawAmountLesserThanTheBalanceTest(){
-        Account michaelAccount = new Account();
+        Account michaelAccount = new Account(123456789, 0);
         assertEquals(0, michaelAccount.getBalance());
         michaelAccount.deposit(1_200);
 
@@ -53,7 +53,7 @@ public class AccountTest {
     }
     @Test
     public void withdrawAmountThanTheBalanceTest(){
-        Account michaelAccount = new Account();
+        Account michaelAccount = new Account(123456789, 0);
         assertEquals(0, michaelAccount.getBalance());
         michaelAccount.deposit(200);
 

@@ -102,7 +102,7 @@ class BankAppTest {
         assertEquals(3000, myBank.checkBalance(123456789));
     }
     @Test
-    void testThatUserCannotDepositNegativeAmount() throws InvalidAmountException {
+    void testThatUserCannotDepositNegativeAmount()  {
         myBank.createAccount(123456789, 0);
         assertThrows(InvalidAmountException.class, ()-> myBank.depositCash(123456789, -10000));
     }
@@ -126,7 +126,7 @@ class BankAppTest {
         assertThrows(InvalidPinException.class, ()-> myBank.removeAccount(1203884654, "2100"));
     }
     @Test
-    void testToRemoveAccountNotAddedToTheList() throws InvalidPinException, InvalidAccountException {
+    void testToRemoveAccountNotAddedToTheList() throws InvalidPinException {
         myBank.registerCustomer("banks", "michael", "2006");
         BankAccount account1 = new BankAccount(1203884654, "Uba", 1000, "2006");
         BankAccount account2 = new BankAccount(123456789, "Uba", 1000, "2005");
